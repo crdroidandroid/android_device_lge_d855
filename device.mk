@@ -69,6 +69,10 @@ PRODUCT_COPY_FILES += \
     device/lge/g3-common/wcnss/WCNSS_qcom_wlan_nv.bin:system/vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
     device/lge/g3-common/wcnss/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
     device/lge/g3-common/wcnss/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf
-
+	
+# Glove mode
+PRODUCT_PACKAGES += \
+    GloveMode
+	
 # common g3
 $(call inherit-product, device/lge/g3-common/g3.mk)
